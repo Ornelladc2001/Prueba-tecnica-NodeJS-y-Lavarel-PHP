@@ -1,0 +1,40 @@
+
+
+.css-tos {
+text-align: justify;;
+ max-width: 800px; 
+  margin: auto; 
+}
+
+
+.terminos {
+margin-bottom: 20px; 
+display: inline-block;
+font-family: math;
+font-size: 30px;
+}
+
+.ejemplo1 {
+margin-bottom: 30px; 
+ display: inline-block;
+}
+
+
+.terminos, .ejemplo1{
+display: flex;
+justify-content: space-around
+}
+
+.ejemplo2,
+.ejemplo3,
+.ejemplo4 {
+margin-top: 10px; 
+}
+
+
+@media screen and (max-width: 2143px){
+.css-tos {
+padding: 100px;
+}
+}
+

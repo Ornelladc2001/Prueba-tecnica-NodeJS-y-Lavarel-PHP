@@ -1,0 +1,152 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  padding: 50px;
+}
+.contact-info {
+  grid-column: span 1;
+}
+
+.contact-info svg {
+  margin-right: 8px; 
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.message-section,
+.button-section {
+  grid-column: span 2;
+}
+
+.message-section {
+  grid-column: span 2;
+}
+
+
+button {
+  display: inline-block;
+  background-color: black;
+  color: orange;
+ padding: 7px 50px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.button-section {
+  grid-column: span 2;
+  text-align: right;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="subject"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#message {
+  height: 170px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+
+.contact-info {
+display: flex;
+flex-direction: column; 
+justify-content: flex-start;
+}
+
+.contact-info p {
+margin-right: 20px; 
+}
+
+
+.titulo1 , .titulo2, .titulo3 {
+color: black;
+font-weight: bold;
+white-space: nowrap; 
+display: inline-block;
+
+}
+
+.titulo1{
+    margin-right: 5px;
+}
+
+.subtitulo1, .subtitulo2, .subtitulo3  {
+color: rgba(128, 128, 128, 0.7); 
+white-space: nowrap; 
+display: inline-block;
+margin-bottom: 20px; 
+margin-left:30px
+}
+
+.subtitulo1 {
+line-height: 1.5;
+}
+
+.contacto-main{
+  body{
+  background-color: red;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 895px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .message-section,
+  .button-section {
+    grid-column: span 1; 
+  }
+
+  #message {
+    width: 100%; 
+  }
+  
+}
+
+@media screen and (max-width: 2143px) {
+  .contact-container {
+   width: min-content;
+    padding: 100px;  
+}
+}
